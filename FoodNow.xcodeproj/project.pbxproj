@@ -9,27 +9,29 @@
 /* Begin PBXBuildFile section */
 		275DD452246649F20078978B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275DD451246649F20078978B /* AppDelegate.swift */; };
 		275DD454246649F20078978B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275DD453246649F20078978B /* SceneDelegate.swift */; };
-		275DD456246649F20078978B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275DD455246649F20078978B /* ViewController.swift */; };
+		275DD456246649F20078978B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275DD455246649F20078978B /* LoginController.swift */; };
 		275DD459246649F20078978B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275DD457246649F20078978B /* Main.storyboard */; };
 		275DD45B246649F40078978B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275DD45A246649F40078978B /* Assets.xcassets */; };
 		275DD45E246649F40078978B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275DD45C246649F40078978B /* LaunchScreen.storyboard */; };
-		275DD466246652420078978B /* ViewControllerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275DD465246652420078978B /* ViewControllerStyle.swift */; };
+		275DD466246652420078978B /* LoginStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275DD465246652420078978B /* LoginStyle.swift */; };
 		275DD469246659160078978B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275DD468246659160078978B /* Button.swift */; };
 		275DD46B2466882A0078978B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275DD46A2466882A0078978B /* Theme.swift */; };
+		27FB5AAF246729A2000518EB /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FB5AAE246729A2000518EB /* Input.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		275DD44E246649F20078978B /* FoodNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		275DD451246649F20078978B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		275DD453246649F20078978B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		275DD455246649F20078978B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		275DD455246649F20078978B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		275DD458246649F20078978B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		275DD45A246649F40078978B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		275DD45D246649F40078978B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		275DD45F246649F40078978B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		275DD465246652420078978B /* ViewControllerStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStyle.swift; sourceTree = "<group>"; };
+		275DD465246652420078978B /* LoginStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStyle.swift; sourceTree = "<group>"; };
 		275DD468246659160078978B /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		275DD46A2466882A0078978B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		27FB5AAE246729A2000518EB /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +64,11 @@
 		275DD450246649F20078978B /* FoodNow */ = {
 			isa = PBXGroup;
 			children = (
+				276E0763246732B20044ADAE /* Views */,
 				275DD467246658FF0078978B /* Components */,
 				275DD451246649F20078978B /* AppDelegate.swift */,
 				275DD453246649F20078978B /* SceneDelegate.swift */,
-				275DD455246649F20078978B /* ViewController.swift */,
-				275DD465246652420078978B /* ViewControllerStyle.swift */,
 				275DD457246649F20078978B /* Main.storyboard */,
-				275DD46A2466882A0078978B /* Theme.swift */,
 				275DD45A246649F40078978B /* Assets.xcassets */,
 				275DD45C246649F40078978B /* LaunchScreen.storyboard */,
 				275DD45F246649F40078978B /* Info.plist */,
@@ -79,9 +79,28 @@
 		275DD467246658FF0078978B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				275DD46A2466882A0078978B /* Theme.swift */,
 				275DD468246659160078978B /* Button.swift */,
+				27FB5AAE246729A2000518EB /* Input.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		276E0763246732B20044ADAE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				276E0764246732BD0044ADAE /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		276E0764246732BD0044ADAE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				275DD465246652420078978B /* LoginStyle.swift */,
+				275DD455246649F20078978B /* LoginController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,9 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FB5AAF246729A2000518EB /* Input.swift in Sources */,
 				275DD469246659160078978B /* Button.swift in Sources */,
-				275DD466246652420078978B /* ViewControllerStyle.swift in Sources */,
-				275DD456246649F20078978B /* ViewController.swift in Sources */,
+				275DD466246652420078978B /* LoginStyle.swift in Sources */,
+				275DD456246649F20078978B /* LoginController.swift in Sources */,
 				275DD46B2466882A0078978B /* Theme.swift in Sources */,
 				275DD452246649F20078978B /* AppDelegate.swift in Sources */,
 				275DD454246649F20078978B /* SceneDelegate.swift in Sources */,

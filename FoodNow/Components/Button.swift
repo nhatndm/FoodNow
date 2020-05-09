@@ -41,4 +41,8 @@ class CustomButton: UIButton {
     backgroundColor = Color.PRIMARY
     setTitleColor(UIColor.white, for: .normal)
   }
+  
+  func setTransparentButton() {
+    backgroundColor = Color.WHITE
+  }
 }
