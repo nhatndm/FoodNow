@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginController: UIViewController {
+class LoginViewController: UIViewController {
   var loginStyle: LoginStyle?
   
   // Button group in authentication content
