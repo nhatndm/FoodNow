@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
   
   // Button group in authentication content
   var btnLogin = CustomButton()
+  
   var btnForgotPassword = CustomButton()
   var btnSignup = CustomButton()
   
@@ -33,6 +34,35 @@ class LoginViewController: UIViewController {
       btnForgotPassword: btnForgotPassword,
       btnSignup: btnSignup
     )
+    
+    // SETUP EVENT
+    mapButtonToFn()
+  }
+  
+  private func mapButtonToFn(){
+    btnLogin.addTarget(self, action: #selector(handleLoginBtn), for: UIControl.Event.touchDown)
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    navigationController?.setNavigationBarHidden(true, animated: animated)
+  }
+
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    navigationController?.setNavigationBarHidden(false, animated: animated)
+  }
+  
+  @objc private func handleLoginBtn(){
+    let email = inputEmail.text!
+    let password = inputPassword.text!
+    
+    if (email == "test" && password == "test") {
+      let tabBarViewController = TabBarViewController()
+
+      self.view.window?.rootViewController = tabBarViewController
+      self.view.window?.makeKeyAndVisible()
+    }
   }
 }
 
